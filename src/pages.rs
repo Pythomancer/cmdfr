@@ -5,7 +5,7 @@ pub fn char_map(val: usize) -> char {
     let spotu = (spot * CHARLIST.len() as f32).floor() as usize;
     CHARLIST[spotu.min(CHARLIST.len() - 1)]
 }
-pub const SILENT: bool = true;
+pub const SILENT: bool = false;
 pub fn print_page(
     x_center: f32,
     y_center: f32,
